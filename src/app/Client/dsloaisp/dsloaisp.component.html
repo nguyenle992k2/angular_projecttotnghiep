@@ -1,0 +1,18 @@
+
+<div>
+    <ul>
+        <li><img style="width: 1100px; height: 450px; margin-left: 110px;" alt="" src="assets/img/sanpham/3.jpg" /></li>
+    </ul>
+</div>
+<h2 style="margin-left: 110px; margin-top: 50px; color: black;">Danh sách loại sản phẩm</h2>
+<div class="row" style="margin-top: 50px;">
+    <div class="col-md-4 col-sm-4 col-xs-12" *ngFor="let item of dsloai">
+      <div style="margin-left: 20px;">
+        <div style="margin: 30px; background-color: dimgrey; width: 270px; height: 70px;" >
+          <h5 style="line-height: 70px;text-align: center;">
+            <a style="margin-left: 20px;font-size: 18px; color: white;" href="/Home/sptheoloai/{{item.MaLoai}}">{{item.TenLoai}}</a>
+        </h5>
+        </div>
+      </div>
+    </div>
+  </div>

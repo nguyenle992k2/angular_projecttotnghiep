@@ -1,0 +1,29 @@
+<h2 style="margin-left: 50px; margin-top: 20px;">Thêm thông tin khách hàng</h2>
+<div style="min-height: 440px; margin-left: 80px;">
+    <form [formGroup]="KHForm" (ngSubmit)="CreateKH()">
+        <div style="margin-top: 20px;">
+          <label for="TenKH">Tên khách hàng: </label>
+          <input type="text" id="TenKH" formControlName="TenKH" > 
+        </div>
+        <div style="margin-top: 20px;">
+          <label for="GioitinhKH">Giới tính: </label>
+          <input type="text" id="GioitinhKH" formControlName="GioitinhKH" >
+        </div>
+        <div style="margin-top: 20px;">
+            <label for="SdtKH">Số điện thoại: </label>
+            <input type="text" id="SdtKH" formControlName="SdtKH" >
+          </div>
+          <div style="margin-top: 20px;">
+            <label for="DiaChiKH">Địa chỉ: </label>
+            <input type="text" id="DiaChiKH" formControlName="DiaChiKH" >
+          </div>
+          <div style="margin-top: 20px;">
+            <label for="EmailKH">Email: </label>
+            <input type="text" id="EmailKH" formControlName="EmailKH" > 
+          </div>
+        <button type="submit" style="background-color:lightgray; margin: 20px; color: black; width: 180px;">
+            <a href="/admin/khachhang">Thêm mới</a>
+        </button>
+      </form>
+      
+</div>

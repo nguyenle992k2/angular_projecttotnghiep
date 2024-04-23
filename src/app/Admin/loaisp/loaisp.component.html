@@ -1,0 +1,32 @@
+<div class="card shadow mb-4">
+    <h2 style="margin-left: 10px; ">Quản lý loại sản phẩm</h2>
+    <div class="card-body">
+        <a routerLink="/admin/loaisp/themloai" class="btn btn-sm btn-primary" >
+            Thêm mới
+        </a>
+    </div>
+    <table  class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Mã loại</th>
+                <th>Tên loại</th>
+                <th>Ghi chú</th>
+                <th>Sửa</th>
+                <th>Xóa</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of loaisp">
+                <td>{{item.MaLoai}}</td>
+                <td>{{item.TenLoai}}</td>
+                <td>{{item.GhiChu}}</td>
+                <td>
+                    <a href="/admin/loaisp/sualoai/{{item.MaLoai}}" class="btn btn-sm btn-primary">Edit</a>
+                </td> 
+                <td>
+                    <button class="btn btn-sm btn-danger" (click)="onDelete(item.MaLoai)">Del</button>
+                </td>
+            </tr>
+        </tbody>
+    </table> 
+</div>

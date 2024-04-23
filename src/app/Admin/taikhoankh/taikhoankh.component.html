@@ -1,0 +1,28 @@
+<div class="card shadow mb-4">
+    <h2 style="margin-left: 10px; ">Quản lý tài khoản khách hàng</h2>
+    <div class="card-body">
+        <button style="background-color:darkgray; width: 100px; height: 30px;">
+            <a href="#" style="color: black; font-size: 18px;">Thêm mới</a>
+        </button>
+    </div>
+    <table  class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Mã khách hàng</th>
+                <th>Tên tài khoản</th>
+                <th>Mật khẩu</th>
+                <th>Sửa</th>
+                <th>Xóa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of taikhoankh">
+                <td>{{item.MaKH}}</td>
+                <td>{{item.TenTKKH}}</td>
+                <td>{{item.Pass}}</td>
+                <td><a href="" class="btn btn-sm btn-primary">Edit</a></td>
+                <td><a href="" class="btn btn-sm btn-danger">Del</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

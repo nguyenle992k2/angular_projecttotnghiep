@@ -1,0 +1,22 @@
+<form [formGroup]="DangkyF" (ngSubmit)="createTKNV()">
+    <div style="margin:50px; border-color: black 1px;">
+        <h1 style="text-align: center;">Đăng ký Admin</h1>
+        <div style="text-align: center;">
+            <label for="MaNV">Mã nhân viên: </label>
+            <input type="text" id="MaNV" formControlName="MaNV">
+        </div>
+        <div style="text-align: center;">
+            <label for="TenTKNV">Tên đăng nhập: </label>
+            <input type="text" id="TenTKNV" formControlName="TenTKNV">
+        </div>
+        <div style="text-align: center;">
+            <label for="Matkhau">Mật khẩu: </label>
+            <input type="password" id="Matkhau" formControlName="Matkhau">
+        </div>
+        <div style="text-align: center;">
+            <button style="width:170px; background-color:blanchedalmond;">
+                <a href="/admin">Đăng ký</a>
+            </button>
+        </div>
+    </div>
+</form>

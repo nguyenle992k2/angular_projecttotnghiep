@@ -1,0 +1,27 @@
+<h2 style="margin-left: 50px; margin-top: 20px;">Thêm thông tin nhà cung cấp</h2>
+<div style="min-height: 440px; margin-left: 80px;">
+    <form [formGroup]="NCCForm" (ngSubmit)="CreateNCC()">
+        <div style="margin-top: 20px;">
+          <label for="TenNCC">Tên nhà cung cấp: </label>
+          <input type="text" id="TenNCC" formControlName="TenNCC" > 
+        </div>
+        <div style="margin-top: 20px;">
+          <label for="SdtNCC">Số điện thoại: </label>
+          <input type="text" id="SdtNCC" formControlName="SdtNCC" >
+        </div>
+        <div style="margin-top: 20px;">
+            <label for="DiachiNCC">Địa chỉ: </label>
+            <input type="text" id="DiachiNCC" formControlName="DiachiNCC" >
+            
+          </div>
+          <div style="margin-top: 20px;">
+            <label for="EmaiNCC">Email: </label>
+            <input type="text" id="EmaiNCC" formControlName="EmaiNCC" >
+          </div>
+      
+        <button type="submit" style="background-color:lightgray; margin: 20px; color: black; width: 180px;">
+            <a href="/admin/nhacungcap">Thêm mới</a>
+        </button>
+      </form>
+      
+</div>

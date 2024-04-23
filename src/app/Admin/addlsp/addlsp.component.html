@@ -1,0 +1,21 @@
+<!-- src/app/create-product/create-product.component.html -->
+<h2 style="margin-left: 50px; margin-top: 20px;">Thêm thông tin loại sản phẩm</h2>
+<div style="min-height: 440px; margin-left: 80px;">
+    <form [formGroup]="LSPForm" (ngSubmit)="createLSP()">
+        <div style="margin-top: 20px;">
+          <label for="TenLoai">Tên loại: </label>
+          <input type="text" id="TenLoai" formControlName="TenLoai" >
+          
+        </div>
+      
+        <div style="margin-top: 20px;">
+          <label for="GhiChu">Ghi chú: </label>
+          <input type="text" id="GhiChu" formControlName="GhiChu" >
+        </div>
+      
+        <button type="submit" style="background-color:lightgray; margin: 20px; color: black; width: 180px;">
+            <a href="/admin/loaisp">Thêm mới</a>
+        </button>
+      </form>
+      
+</div>

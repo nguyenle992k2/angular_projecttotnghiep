@@ -1,0 +1,22 @@
+<form action="" method="post" [formGroup]="loginF" (submit)="onLogin()">
+    <div style="margin:50px; border-color: black 1px;">
+        <h1 style="text-align: center;">Đăng nhập Admin</h1>
+        <div style="text-align: center;">
+            <label for="">Tên đăng nhập: </label>
+            <input type="text" placeholder="" formControlName="tendangnhap">
+        </div>
+        <div style="text-align: center;">
+            <label for="">Mật khẩu: </label>
+            <input type="password" placeholder="" formControlName="matkhau">
+        </div>
+        <div style="text-align: center;">
+            <button style="width:170px; background-color:blanchedalmond;">
+                <a href="/admin">Đăng nhập</a>
+            </button>
+        </div>
+        <div style="text-align: center; margin-top:10px">
+            <h5>Bạn chưa có tài khoản? <a href="/dangkyadmin" style="color:blue">Đăng ký</a> ngay</h5>
+            <a href="/dangkyadmin" style="color:blue">Quên mật khẩu</a>
+        </div>
+    </div>
+</form>

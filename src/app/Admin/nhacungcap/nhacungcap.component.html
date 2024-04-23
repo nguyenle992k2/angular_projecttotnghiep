@@ -1,0 +1,36 @@
+<div class="card shadow mb-4">
+    <h2 style="margin-left: 10px; ">Quản lý nhà cung cấp</h2>
+    <div class="card-body">
+        <a routerLink="/admin/nhacc/themmoi" class="btn btn-sm btn-primary" >
+            Thêm mới
+        </a>
+    </div>
+    <table  class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Mã nhà cung cấp</th>
+                <th>Tên nhà cung cấp</th>
+                <th>Số điện thoại</th>
+                <th>Địa chỉ</th>
+                <th>Email</th>
+                <th>Sửa</th>
+                <th>Xóa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of nhacc">
+                <td>{{item.MaNCC}}</td>
+                <td>{{item.TenNCC}}</td>
+                <td>{{item.SdtNCC}}</td>
+                <td>{{item.DiachiNCC}}</td>
+                <td>{{item.EmaiNCC}}</td>
+                <td>
+                    <a href="/admin/nhacc/sua/{{item.MaNCC}}" class="btn btn-sm btn-primary">Edit</a>
+                </td>
+                <td>
+                    <button class="btn btn-sm btn-danger" (click)="onDelete(item.MaNCC)">Del</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

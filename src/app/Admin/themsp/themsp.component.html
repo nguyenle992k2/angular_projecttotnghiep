@@ -1,0 +1,41 @@
+<h2 style="margin-left: 50px; margin-top: 20px;">Thêm thông tin sản phẩm</h2>
+<div style="min-height: 440px; margin-left: 80px;">
+    <form [formGroup]="SanPhamForm" (ngSubmit)="CreateSP()">
+        <div style="margin-top: 20px;">
+          <label for="MaLoai">Mã loại: </label>
+          <input type="text" id="MaLoai" formControlName="MaLoai" > 
+        </div>
+        <div style="margin-top: 20px;">
+          <label for="MaNCC">Mã nhà cung cấp: </label>
+          <input type="text" id="MaNCC" formControlName="MaNCC" >
+        </div>
+        <div style="margin-top: 20px;">
+            <label for="TenSP">Tên sản phẩm: </label>
+            <input type="text" id="TenSP" formControlName="TenSP" >
+          </div>
+          <div style="margin-top: 20px;">
+            <label for="Anh">Ảnh sản phẩm: </label>
+            <input type="text" id="Anh" formControlName="Anh" >
+          </div>
+          <div style="margin-top: 20px;">
+            <label for="Mota">Mô tả: </label>
+            <input type="text" id="Mota" formControlName="Mota" >
+            
+          </div>
+          <div style="margin-top: 20px;">
+            <label for="Dongia">Đơn giá: </label>
+            <input type="text" id="Dongia" formControlName="Dongia" >
+            
+          </div>
+          <div style="margin-top: 20px;">
+            <label for="NgayTao">Ngày tạo: </label>
+            <input type="text" id="NgayTao" formControlName="NgayTao" >
+          </div>
+        <!-- Thêm các trường khác cần thiết cho sản phẩm -->
+      
+        <button type="submit" style="background-color:lightgray; margin: 20px; color: black; width: 180px;">
+           <a href="/admin/sanpham">Thêm mới</a>
+        </button>
+      </form>
+      
+</div>

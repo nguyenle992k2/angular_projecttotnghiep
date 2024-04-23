@@ -1,0 +1,42 @@
+<h2 style="margin-left: 50px; margin-top: 20px;">Thêm thông tin nhân viên</h2>
+<div style="min-height: 440px; margin-left: 80px;">
+    <form [formGroup]="NVienForm" (ngSubmit)="CreateNV()">
+        <div style="margin-top: 20px;">
+          <label for="TenNV">Tên nhân viên: </label>
+          <input type="text" id="TenNV" formControlName="TenNV" > 
+        </div>
+        <div style="margin-top: 20px;">
+          <label for="GioitinhNV">Giới tính: </label>
+          <input type="text" id="GioitinhNV" formControlName="GioitinhNV" >
+        </div>
+        <div style="margin-top: 20px;">
+            <label for="NgaysinhNV">Ngày sinh: </label>
+            <input type="text" id="NgaysinhNV" formControlName="NgaysinhNV" >
+            
+          </div>
+          <div style="margin-top: 20px;">
+            <label for="SdtNV">Số điện thoại: </label>
+            <input type="text" id="SdtNV" formControlName="SdtNV" >
+          </div>
+          <div style="margin-top: 20px;">
+            <label for="Quequan">Quê quán: </label>
+            <input type="text" id="Quequan" formControlName="Quequan" >
+            
+          </div>
+          <div style="margin-top: 20px;">
+            <label for="Noicutru">Nơi cư trú: </label>
+            <input type="text" id="Noicutru" formControlName="Noicutru" >
+            
+          </div>
+          <div style="margin-top: 20px;">
+            <label for="EmailNV">Email: </label>
+            <input type="text" id="EmailNV" formControlName="EmailNV" >
+          </div>
+        <!-- Thêm các trường khác cần thiết cho sản phẩm -->
+      
+        <button type="submit" style="background-color:lightgray; margin: 20px; color: black; width: 180px;">
+            <a href="/admin/nhanvien">Thêm mới</a>
+        </button>
+      </form>
+      
+</div>

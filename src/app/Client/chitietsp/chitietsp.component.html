@@ -1,0 +1,14 @@
+<div style="min-height: 500px;" class="row" *ngFor="let item of chitietsp">
+    <div class="col-md-5">
+        <img style="width: 380px; height: 290px; margin-top: 90px;margin-left: 110px;" src="assets/img/sanpham/{{item.Anh}}" alt="">
+    </div>
+    <div class="col-md-7">
+        <h2 style="margin-top: 50px;color:black">Chi tiết sản phẩm</h2>
+        <p style="margin:50px;color:dimgray">Tên sản phẩm: {{item.TenSP}}</p>
+        <p style="margin:50px;color:dimgray">Đơn giá: {{item.Dongia}} VND</p>
+        <p style="margin:50px;color:dimgray">Mô tả: {{item.Mota}}</p>
+        <p>
+            <button type="button" style="margin-left: 50px;color:black; background-color: burlywood;width: 170px; height: 30px;">Thêm vào giỏ hàng</button>
+        </p>
+    </div>
+</div>

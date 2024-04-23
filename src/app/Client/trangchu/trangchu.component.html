@@ -1,0 +1,22 @@
+
+<div>
+    <ul>
+        <li><img style="width: 1100px; height: 450px; margin-left: 110px;" alt="" src="assets/img/sanpham/3.jpg" /></li>
+    </ul>
+</div>
+<h2 style="margin-left: 110px; margin-top: 20px; color: black;">Sản phẩm được yêu thích nhất</h2>
+<div class="row" style="margin-top: 20px;">
+    <div class="col-md-3 col-sm-3 col-xs-12" *ngFor="let sp of trangchu">
+      <div style="margin-left: 50px;">
+        <a><img style="width: 200px; height: 190px;" src="assets/img/sanpham/{{sp.Anh}}" /></a>
+        <div style="margin: 20px;" class="add-to-cart">
+          <h5 class="product-name"><a style="font-size: 18px;" href="/Home/chitietsp/{{sp.MaSP}}">{{sp.TenSP}}</a></h5>
+          <span style="color: black;margin-left: 10px;">Giá: {{sp.Dongia}} VND</span> <br>
+          <button style="width: 170px;height: 30px;background-color:burlywood;" (click)="onAddCart(sp)">
+            Thêm vào giỏ hàng </button>
+        </div>
+        <div class="bestseller"></div>
+      </div>
+    </div>
+  </div>
+  

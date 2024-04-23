@@ -1,0 +1,18 @@
+<h2 style="margin-left: 50px; margin-top: 20px;">Sửa thông tin loại sản phẩm</h2>
+<div style="min-height: 440px; margin-left: 80px;">
+    <form (ngSubmit)="Update()">
+      <div>
+        <div>
+          <label for="TenLoai">Tên loại: </label>
+          <input type="text" id="TenLoai" name="TenLoai" [(ngModel)]="loaisp.TenLoai">
+        </div>
+        <div>
+          <label for="GhiChu">Ghi chú: </label>
+          <input type="text" id="GhiChu" name="GhiChu" [(ngModel)]="loaisp.GhiChu">
+        </div>
+        <button type="submit" style="background-color:lightgray; margin: 20px; color: black; width: 180px;">
+          <a href="/admin/loaisp">Cập nhật</a>
+      </button>
+      </div>
+    </form>
+</div>

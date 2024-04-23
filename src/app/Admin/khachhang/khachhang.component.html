@@ -1,0 +1,38 @@
+<div class="card shadow mb-4">
+    <h2 style="margin-left: 10px; ">Quản lý khách hàng</h2>
+    <div class="card-body">
+        <a routerLink="/admin/khachhang/themmoi" class="btn btn-sm btn-primary" >
+            Thêm mới
+        </a>
+    </div>
+    <table  class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Mã khách hàng</th>
+                <th>Tên khách hàng</th>
+                <th>Giới tính</th>
+                <th>Số điện thoại</th>
+                <th>Địa chỉ</th>
+                <th>Email</th>
+                <th>Sửa</th>
+                <th>Xóa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of khachhang">
+                <td>{{item.MaKH}}</td>
+                <td>{{item.TenKH}}</td>
+                <td>{{item.GioitinhKH}}</td>
+                <td>{{item.SdtKH}}</td>
+                <td>{{item.DiaChiKH}}</td>
+                <td>{{item.EmailKH}}</td>
+                <td>
+                    <a href="/admin/khachhang/sua/{{item.MaKH}}" class="btn btn-sm btn-primary">Edit</a>
+                </td>
+                <td>
+                    <button class="btn btn-sm btn-danger" (click)="onDelete(item.MaKH)">Del</button>
+                </td>
+            </tr>
+        </tbody>
+    </table> 
+</div>
